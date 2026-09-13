@@ -5,7 +5,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <title>张顺成 · 数据分析师 | 个人简历</title>
-<meta name="description" content="张顺成 · 数据分析师 · 大数据工程技术本科 · Python / SQL / Excel / Power BI · 两个端到端数据分析项目" />
+<meta name="description" content="张顺成 · 数据分析师 · 大数据工程技术本科 · Python / SQL / Excel / Power BI · 五个数据分析项目" />
 <meta property="og:title" content="张顺成 · 数据分析师 | 个人简历" />
 <meta property="og:description" content="大数据工程技术本科 · Python / SQL / Excel / Power BI · 端到端数据分析项目经验" />
 <style>
@@ -519,7 +519,7 @@
             <div class="pc-row"><span class="k">求职意向</span><span class="v">数据分析师（全职）</span></div>
             <div class="pc-row"><span class="k">教育背景</span><span class="v">广东工商职业技术大学 · 大数据工程技术<span class="sub">本科在读 · 2023.07 — 2027.06 · GPA 3.56 / 4.0</span></span></div>
             <div class="pc-row"><span class="k">核心技能</span><span class="v">Excel · Power BI · SQL · Python</span></div>
-            <div class="pc-row"><span class="k">项目经验</span><span class="v">糖尿病早期筛查数据分析平台<span class="sub">电商销售数据分析 · 端到端经营诊断</span></span></div>
+            <div class="pc-row"><span class="k">项目经验</span><span class="v">糖尿病早期筛查数据分析平台<span class="sub">电商经营 · 深圳通出行 · 新冠疫情 · 电商订单 · 共 5 项</span></span></div>
             <div class="pc-row"><span class="k">GitHub</span><span class="v"><a href="https://github.com/78278287" target="_blank" rel="noopener">github.com/78278287 ↗</a></span></div>
             <div class="pc-row"><span class="k">获奖荣誉</span><span class="v">国家级 3 项 · 省级 4 项 · 职业技能证书 1 项</span></div>
           </div>
@@ -592,7 +592,7 @@
           <div class="panel-title"><span class="pi">//</span>数据分析能力矩阵</div>
           <p style="margin:0;color:var(--muted);font-size:14.5px;line-height:1.85;">
             以<b style="color:var(--ink)">业务问题</b>为导向开展分析：从数据清洗、SQL 提取、统计分析到可视化呈现的完整链路，
-            均已在两个端到端项目中独立完成并交付可复现成果。
+            均已在五个数据分析项目中独立完成并交付可复现成果。
           </p>
           <ul style="margin:16px 0 0;padding-left:20px;color:var(--muted);font-size:14.5px;line-height:2;">
             <li>独立完成 <b style="color:var(--ink)">数据清洗 → 数仓建模 → 分析 → 报表</b> 全流程</li>
@@ -748,6 +748,96 @@
         </div>
         <p class="p-note">注：模拟数据（固定随机种子可复现），用于展示完整分析链路与工具运用。</p>
       </article>
+
+      <!-- 项目三：深圳通刷卡 -->
+      <article class="project reveal">
+        <div class="project-head">
+          <h3><span class="pidx">PROJECT 03</span>深圳通刷卡数据分析 —— 交通出行大数据 EDA</h3>
+          <a class="repo-btn" href="https://github.com/78278287/shenzhen-metro-analysis" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+            github.com/78278287/shenzhen-metro-analysis ↗
+          </a>
+        </div>
+        <p class="p-tagline">基于深圳市政府数据开放平台的深圳通刷卡流水，从「<b>乘客、地铁、巴士</b>」三个主题做探索性数据分析，挖掘出行规律与线路运营特征。</p>
+        <div class="stack-row">
+          <span class="stack-chip">Python</span><span class="stack-chip">pandas</span>
+          <span class="stack-chip">pyecharts</span><span class="stack-chip">ECharts</span>
+          <span class="stack-chip">数据抽样</span>
+        </div>
+        <ul class="work-list">
+          <li><b>数据抽样：</b>原始 336MB / 133.7 万条 JSON，用蓄水池抽样（Reservoir Sampling）抽取 <span class="m">10 万条</span> 样本，避免整表读入内存。</li>
+          <li><b>数据清洗：</b>去重、去脏（交易时间越界）、字段类型统一，输出 99,929 条干净样本。</li>
+          <li><b>乘客画像：</b>整体 64,503 人次，地铁 31,319 / 巴士 33,184；优惠构成以 9.5 折、8 折为主。</li>
+          <li><b>地铁运营：</b>统计平均通勤时长、站点进出站 TOP、线路运输贡献度 / 换乘比例 / 收入排名。</li>
+          <li><b>可视化交付：</b>13 个分析点，输出交互式 HTML 与 PNG 图表。</li>
+        </ul>
+        <div class="result-row">
+          <span class="result-item">样本量 <b>10 万条</b></span>
+          <span class="result-item">平均通勤 <b>32.1 分钟</b></span>
+          <span class="result-item">最高换乘率 <b>14.96%</b></span>
+          <span class="result-item">平均每次 <b>2.80 元</b></span>
+        </div>
+      </article>
+
+      <!-- 项目四：新冠疫情 -->
+      <article class="project reveal">
+        <div class="project-head">
+          <h3><span class="pidx">PROJECT 04</span>新冠疫情数据分析 —— 全球与中国疫情可视化</h3>
+          <a class="repo-btn" href="https://github.com/78278287/covid19-analysis" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+            github.com/78278287/covid19-analysis ↗
+          </a>
+        </div>
+        <p class="p-tagline">基于 Johns Hopkins 大学全球新冠肺炎时间序列（确诊 / 死亡 / 治愈），对「<b>全球与中国</b>」两个维度做疫情探索与动态可视化。</p>
+        <div class="stack-row">
+          <span class="stack-chip">Python</span><span class="stack-chip">pandas</span>
+          <span class="stack-chip">pyecharts</span><span class="stack-chip">ECharts</span>
+          <span class="stack-chip">Timeline</span>
+        </div>
+        <ul class="work-list">
+          <li><b>数据清洗：</b>统一国家名称（US→United States）、台湾数据归入中国、补充中文国名 / 省名列，口径一致可对比。</li>
+          <li><b>全球维度：</b>确诊 / 死亡 / 治愈 / 死亡率 / 治愈率一览，四维度世界地图分层展示。</li>
+          <li><b>中国维度：</b>分省地图与 TOP20 排行，湖北、香港、广东居前。</li>
+          <li><b>动态可视化：</b>按周抽样的 Timeline 时间轴动画，直观呈现疫情扩散与湖北爆发回落过程。</li>
+          <li><b>可视化交付：</b>全球 / 中国共 10 张图（交互式 HTML + PNG）。</li>
+        </ul>
+        <div class="result-row">
+          <span class="result-item">全球确诊 <b>1.228 亿</b></span>
+          <span class="result-item">全球死亡率 <b>2.21%</b></span>
+          <span class="result-item">中国现有确诊 <b>473</b></span>
+          <span class="result-item">中国治愈率 <b>94.8%</b></span>
+        </div>
+      </article>
+
+      <!-- 项目五：电商订单 -->
+      <article class="project reveal">
+        <div class="project-head">
+          <h3><span class="pidx">PROJECT 05</span>电商订单数据分析 —— 多数据集 EDA 与 RFM 客户分层</h3>
+          <a class="repo-btn" href="https://github.com/78278287/tmall-sales-analysis" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+            github.com/78278287/tmall-sales-analysis ↗
+          </a>
+        </div>
+        <p class="p-tagline">基于和鲸社区 3 份互不相关的电商数据集，独立做「<b>整体指标、地区分布、时间趋势、店铺排行、客户价值</b>」探索性分析。</p>
+        <div class="stack-row">
+          <span class="stack-chip">Python</span><span class="stack-chip">pandas</span>
+          <span class="stack-chip">pyecharts</span><span class="stack-chip">RFM</span>
+          <span class="stack-chip">openpyxl</span>
+        </div>
+        <ul class="work-list">
+          <li><b>整体指标：</b>天猫订单 28,010 条，成交率 85.99%、退货率 23.44%；总金额 247.48 万、实际收入 190.25 万。</li>
+          <li><b>时间趋势：</b>每日订单走势 + 每小时走势（21–22 点峰值），下单到付款平均 7.7 分钟。</li>
+          <li><b>店铺分析：</b>双十一美妆店铺累计销量 TOP10、销量占比与平均价格；峰值单日销量 3,332 万件。</li>
+          <li><b>客户分层：</b>RFM 模型（R 20% + F 30% + M 50% 加权）对 <span class="m">1,083 位</span> 客户做价值分层，指导二次营销。</li>
+          <li><b>可视化交付：</b>3 部分共 12 张图（交互式 HTML + PNG）。</li>
+        </ul>
+        <div class="result-row">
+          <span class="result-item">成交率 <b>85.99%</b></span>
+          <span class="result-item">总金额 <b>247.48 万</b></span>
+          <span class="result-item">峰值销量 <b>3332 万件</b></span>
+          <span class="result-item">RFM 客户 <b>1,083</b></span>
+        </div>
+      </article>
     </div>
   </section>
 
@@ -893,6 +983,9 @@
     <div class="footer-links">
       <a href="https://github.com/78278287/tangkang-twin" target="_blank" rel="noopener">糖康孪生 · 项目源码</a>
       <a href="https://github.com/78278287/ecommerce-sales-analysis" target="_blank" rel="noopener">电商分析 · 项目源码</a>
+      <a href="https://github.com/78278287/shenzhen-metro-analysis" target="_blank" rel="noopener">深圳通刷卡 · 项目源码</a>
+      <a href="https://github.com/78278287/covid19-analysis" target="_blank" rel="noopener">新冠疫情 · 项目源码</a>
+      <a href="https://github.com/78278287/tmall-sales-analysis" target="_blank" rel="noopener">电商订单 · 项目源码</a>
       <a href="#certificates">荣誉证书</a>
       <a href="#top">回到顶部</a>
     </div>
