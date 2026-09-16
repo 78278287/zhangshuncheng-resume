@@ -749,11 +749,11 @@
           <span class="stack-chip">数据抽样</span>
         </div>
         <ul class="work-list">
-          <li><b>数据抽样：</b>原始 336MB / 133.7 万条 JSON，用蓄水池抽样（Reservoir Sampling）抽取 <span class="m">10 万条</span> 样本，避免整表读入内存。</li>
+          <li><b>数据抽样：</b>原始 336MB / 133.7 万条 JSON，分块抽样读取 <span class="m">10 万条</span> 样本，避免整表读入内存。</li>
           <li><b>数据清洗：</b>去重、去脏（交易时间越界）、字段类型统一，输出 99,929 条干净样本。</li>
           <li><b>乘客画像：</b>整体 64,503 人次，地铁 31,319 / 巴士 33,184；优惠构成以 9.5 折、8 折为主。</li>
           <li><b>地铁运营：</b>统计平均通勤时长、站点进出站 TOP、线路运输贡献度 / 换乘比例 / 收入排名。</li>
-          <li><b>可视化交付：</b>13 个分析点，输出交互式 HTML 与 PNG 图表。</li>
+          <li><b>可视化交付：</b>产出 13 项分析图表（交互式 HTML + PNG）。</li>
         </ul>
         <div class="result-row">
           <span class="result-item">样本量 <b>10 万条</b></span>
@@ -774,7 +774,7 @@
         </div>
         <div class="p-meta">
           <span class="p-time">2026.01 — 至今</span>
-          <span class="p-role">个人项目 · <b>主要负责</b>：数据清洗与星型建模 · SQL / Python 多维分析 · RFM 客户分层 · Excel / Power BI 交付</span>
+          <span class="p-role">个人项目 · <b>主要负责</b>：数据清洗与建模 · SQL / Python 多维分析 · RFM 客户分层 · Excel / Power BI 交付</span>
         </div>
         <p class="p-tagline">覆盖「<b>数据生成 → 数据清洗（EDA）→ 数据建模 → SQL 分析 → Python 分析 → Excel 报表 → Power BI</b>」完整链路，练习回答经营状况、品类渠道、客户价值三类业务问题。</p>
         <div class="stack-row">
@@ -855,7 +855,7 @@
           <li><b>数据治理：</b>用 Python 清洗 3 份异构医疗数据（<span class="m">3520 条 → 2984 条</span>，留存率 84.8%），制定 8 类清洗规则，并对敏感字段做哈希脱敏。</li>
           <li><b>数据建模：</b>按星型结构整理数据表（<span class="m">4 维表 + 2 事实表</span>），并完成数据一致性校验。</li>
           <li><b>特征工程：</b>构建 35 项候选特征（含 15 项医学派生特征），经相关性 / 共线性筛选保留 18 项进入建模。</li>
-          <li><b>风险分级建模：</b>对比随机森林与 XGBoost 两种模型（含交叉验证调参），对筛查对象输出三级风险分层。</li>
+          <li><b>风险分级建模：</b>对比随机森林与 XGBoost 两种模型的分类效果（用交叉验证评估），对筛查对象输出三级风险分层。</li>
           <li><b>可视化交付：</b>8 份 Excel 专项报告 + HTML 综合分析报告 + Power BI 数据看板，结论可复现、可交付。</li>
         </ul>
         <div class="result-row">
@@ -863,7 +863,7 @@
           <span class="result-item">准确率 <b>84.4%</b></span>
           <span class="result-item">高风险捕获率 <b>57.4%</b></span>
           <span class="result-item">低风险漏诊率 <b>12.8%</b></span>
-          <span class="result-item">5 折交叉验证 AUC <b>0.886</b></span>
+          <span class="result-item">交叉验证 AUC <b>0.886</b></span>
         </div>
       </article>
     </div>
