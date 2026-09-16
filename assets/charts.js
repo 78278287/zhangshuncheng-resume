@@ -45,7 +45,7 @@
       symbolSize: 5,
       data: [{
         name: '技能熟练度',
-        value: [92, 88, 85, 82, 85],
+        value: [85, 80, 80, 82, 85],
         itemStyle: { color: accent },
         lineStyle: { color: accent, width: 2.5 },
         areaStyle: { color: 'rgba(11,112,89,0.16)' },

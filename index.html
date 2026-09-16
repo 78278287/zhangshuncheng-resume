@@ -268,6 +268,13 @@
   .project-head .repo-btn:hover { border-color: var(--accent); background: var(--accent-soft); text-decoration: none; }
   .project-head .repo-btn svg { width: 16px; height: 16px; fill: var(--ink); }
 
+  .p-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 12px; }
+  .p-meta .p-time { font-family: var(--font-mono); font-size: 12.5px; font-weight: 700; color: var(--accent-dark);
+    background: var(--accent-soft); border: 1px solid rgba(11, 112, 89, .18); border-radius: 6px;
+    padding: 3px 10px; letter-spacing: .02em; white-space: nowrap; }
+  .p-meta .p-role { font-size: 13.5px; color: var(--muted); line-height: 1.6; }
+  .p-meta .p-role b { color: var(--ink); font-weight: 600; }
+
   .p-tagline { margin: 10px 0 0; color: var(--muted); font-size: 14.5px; }
   .p-tagline b { color: var(--ink); font-weight: 600; }
 
@@ -519,7 +526,7 @@
             <div class="pc-row"><span class="k">求职意向</span><span class="v">数据分析师（全职）</span></div>
             <div class="pc-row"><span class="k">教育背景</span><span class="v">广东工商职业技术大学 · 大数据工程技术<span class="sub">本科在读 · 2023.07 — 2027.06 · GPA 3.56 / 4.0</span></span></div>
             <div class="pc-row"><span class="k">核心技能</span><span class="v">Excel · Power BI · SQL · Python · ECharts</span></div>
-            <div class="pc-row"><span class="k">项目经验</span><span class="v">糖尿病早期筛查数据分析平台<span class="sub">电商经营 · 深圳通出行 · 新冠疫情 · 电商订单 · 共 5 项</span></span></div>
+            <div class="pc-row"><span class="k">项目经验</span><span class="v">电商订单数据分析<span class="sub">深圳通出行 · 电商经营 · 新冠疫情 · 糖尿病筛查 · 共 5 项</span></span></div>
             <div class="pc-row"><span class="k">GitHub</span><span class="v"><a href="https://github.com/78278287" target="_blank" rel="noopener">github.com/78278287 ↗</a></span></div>
             <div class="pc-row"><span class="k">获奖荣誉</span><span class="v">国家级 3 项 · 省级 4 项 · 职业技能证书 1 项</span></div>
           </div>
@@ -595,9 +602,9 @@
             均已在五个数据分析项目中独立完成并交付可复现成果。
           </p>
           <ul style="margin:16px 0 0;padding-left:20px;color:var(--muted);font-size:14.5px;line-height:2;">
-            <li>独立完成 <b style="color:var(--ink)">数据清洗 → 数仓建模 → 分析 → 报表</b> 全流程</li>
+            <li>独立完成 <b style="color:var(--ink)">数据清洗 → 数据建模 → 分析 → 报表</b> 全流程</li>
             <li>掌握 <b style="color:var(--ink)">描述性统计与探索性分析（EDA）</b>方法</li>
-            <li>具备 <b style="color:var(--ink)">机器学习建模与评估</b>实践经验</li>
+            <li>了解 <b style="color:var(--ink)">机器学习建模与评估</b>的基本流程</li>
             <li>输出 <b style="color:var(--ink)">业务可落地</b>的分析结论与建议</li>
           </ul>
         </div>
@@ -618,17 +625,17 @@
         <div class="skill-card reveal">
           <span class="no">01 · 分析与可视化</span>
           <h3>Excel / Power BI</h3>
-          <p>精通 <span class="m">Excel</span> 数据透视表、常用函数与报表自动化；熟练使用 <span class="m">Power BI</span> 搭建数据看板、编写 DAX 度量，快速输出业务分析报表。</p>
+          <p>熟练使用 <span class="m">Excel</span> 数据透视表、常用函数与报表自动化；能用 <span class="m">Power BI</span> 搭建数据看板、编写 DAX 度量，输出业务分析报表。</p>
         </div>
         <div class="skill-card reveal d1">
           <span class="no">02 · 数据库与 SQL</span>
           <h3>SQL / MySQL</h3>
-          <p>熟练编写 <span class="m">SQL</span> 完成多表关联查询、分组聚合与业务数据提取；具备星型数据模型设计与多维数据校验经验。</p>
+          <p>能编写 <span class="m">SQL</span> 完成多表关联查询、分组聚合与业务数据提取；了解星型数据模型（维度表 / 事实表）的设计思路。</p>
         </div>
         <div class="skill-card reveal d2">
           <span class="no">03 · 编程与建模</span>
           <h3>Python</h3>
-          <p>掌握 <span class="m">Pandas / NumPy</span>，独立完成数据清洗、格式转换与描述性统计分析；熟悉 <span class="m">scikit-learn / XGBoost</span> 建模与 <span class="m">pyecharts / ECharts</span> 交互式可视化。</p>
+          <p>掌握 <span class="m">Pandas / NumPy</span>，能独立完成数据清洗、格式转换与描述性统计分析；了解 <span class="m">scikit-learn / XGBoost</span> 建模流程与 <span class="m">pyecharts / ECharts</span> 交互式可视化。</p>
         </div>
       </div>
 
@@ -636,16 +643,16 @@
         <div class="card skill-bars reveal">
           <div class="h">$ <b>skill --level</b> <span style="opacity:.55">// 技能熟练度</span></div>
           <div class="skill-bar">
-            <div class="sb-head"><span class="sb-name">Excel <span class="m">数据透视表 · 函数 · 报表自动化</span></span><span class="sb-level">精通</span></div>
-            <div class="sb-track"><div class="sb-fill" data-w="92%"></div></div>
+            <div class="sb-head"><span class="sb-name">Excel <span class="m">数据透视表 · 函数 · 报表自动化</span></span><span class="sb-level">熟练</span></div>
+            <div class="sb-track"><div class="sb-fill" data-w="85%"></div></div>
           </div>
           <div class="skill-bar">
             <div class="sb-head"><span class="sb-name">Power BI <span class="m">数据看板 · DAX 度量</span></span><span class="sb-level">熟练</span></div>
-            <div class="sb-track"><div class="sb-fill" data-w="88%"></div></div>
+            <div class="sb-track"><div class="sb-fill" data-w="80%"></div></div>
           </div>
           <div class="skill-bar">
-            <div class="sb-head"><span class="sb-name">SQL / MySQL <span class="m">多表关联 · 分组聚合 · 数仓建模</span></span><span class="sb-level">熟练</span></div>
-            <div class="sb-track"><div class="sb-fill" data-w="85%"></div></div>
+            <div class="sb-head"><span class="sb-name">SQL / MySQL <span class="m">多表关联 · 分组聚合 · 数据提取</span></span><span class="sb-level">掌握</span></div>
+            <div class="sb-track"><div class="sb-fill" data-w="80%"></div></div>
           </div>
           <div class="skill-bar">
             <div class="sb-head"><span class="sb-name">Python <span class="m">Pandas · NumPy · scikit-learn · XGBoost</span></span><span class="sb-level">掌握</span></div>
@@ -674,7 +681,7 @@
         <span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">scikit-learn</span>
         <span class="tag">XGBoost</span><span class="tag">pyecharts</span><span class="tag">ECharts</span>
         <span class="tag">Matplotlib</span><span class="tag">Seaborn</span><span class="tag">openpyxl</span>
-        <span class="tag">特征工程</span><span class="tag">RFM 分析</span><span class="tag">数据可视化</span><span class="tag">数仓建模</span><span class="tag">数据抽样</span>
+        <span class="tag">特征工程</span><span class="tag">RFM 分析</span><span class="tag">数据可视化</span><span class="tag">数据建模</span><span class="tag">数据抽样</span>
       </div>
     </div>
   </section>
@@ -688,76 +695,52 @@
         <span class="sec-line"></span>
       </div>
 
-      <!-- 项目一：糖康孪生 -->
+      <!-- 项目一：电商订单 -->
       <article class="project reveal">
         <div class="project-head">
-          <h3><span class="pidx">PROJECT 01</span>糖康孪生 —— 糖尿病早期筛查数据分析平台</h3>
-          <a class="repo-btn" href="https://github.com/78278287/tangkang-twin" target="_blank" rel="noopener">
+          <h3><span class="pidx">PROJECT 01</span>电商订单数据分析 —— 多数据集 EDA 与 RFM 客户分层</h3>
+          <a class="repo-btn" href="https://github.com/78278287/tmall-sales-analysis" target="_blank" rel="noopener">
             <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
-            github.com/78278287/tangkang-twin ↗
+            github.com/78278287/tmall-sales-analysis ↗
           </a>
         </div>
-        <p class="p-tagline">面向糖尿病早期筛查场景，构建「<b>数据治理 → 星型数仓 → 特征工程 → 风险分级 → 可视化交付</b>」全流程分析链路，支撑低成本初筛分流与高风险优先转诊策略。</p>
+        <div class="p-meta">
+          <span class="p-time">2026.07 — 至今</span>
+          <span class="p-role">个人项目 · <b>主要负责</b>：多数据集清洗 · 整体指标与趋势分析 · 店铺销量排行 · RFM 客户价值分层</span>
+        </div>
+        <p class="p-tagline">基于和鲸社区 3 份互不相关的电商数据集，独立做「<b>整体指标、地区分布、时间趋势、店铺排行、客户价值</b>」探索性分析。</p>
         <div class="stack-row">
           <span class="stack-chip">Python</span><span class="stack-chip">pandas</span>
-          <span class="stack-chip">scikit-learn</span><span class="stack-chip">XGBoost</span>
-          <span class="stack-chip">PyMySQL</span><span class="stack-chip">MySQL</span>
-          <span class="stack-chip">Power BI</span><span class="stack-chip">Excel</span>
+          <span class="stack-chip">pyecharts</span><span class="stack-chip">RFM</span>
+          <span class="stack-chip">openpyxl</span>
         </div>
         <ul class="work-list">
-          <li><b>数据治理：</b>用 Python 清洗 3 份异构医疗数据（<span class="m">3520 条 → 2984 条</span>，留存率 84.8%），制定 8 类清洗规则并完成 SHA-256 隐私脱敏。</li>
-          <li><b>数仓建模：</b>设计 MySQL 星型模型（<span class="m">4 维表 + 2 事实表 + 3 视图</span>），23 条多维校验规则全部通过。</li>
-          <li><b>特征工程：</b>构建 35 项候选特征（含 15 项医学派生特征），经相关性 / 共线性筛选保留 18 项进入建模。</li>
-          <li><b>风险分级建模：</b>随机森林 + XGBoost 融合模型（网格搜索 + 5 折交叉验证），对筛查对象输出三级风险分层。</li>
-          <li><b>可视化交付：</b>8 份 Excel 专项报告 + HTML 综合分析报告 + Power BI 数据看板，结论可复现、可交付。</li>
+          <li><b>整体指标：</b>天猫订单 28,010 条，成交率 85.99%、退货率 23.44%；总金额 247.48 万、实际收入 190.25 万。</li>
+          <li><b>时间趋势：</b>每日订单走势 + 每小时走势（21–22 点峰值），下单到付款平均 7.7 分钟。</li>
+          <li><b>店铺分析：</b>双十一美妆店铺累计销量 TOP10、销量占比与平均价格；峰值单日销量 3,332 万件。</li>
+          <li><b>客户分层：</b>RFM 模型（R 20% + F 30% + M 50% 加权）对 <span class="m">1,083 位</span> 客户做价值分层，指导二次营销。</li>
+          <li><b>可视化交付：</b>3 部分共 12 张图（交互式 HTML + PNG）。</li>
         </ul>
         <div class="result-row">
-          <span class="result-item">测试集 AUC <b>0.928</b></span>
-          <span class="result-item">准确率 <b>84.4%</b></span>
-          <span class="result-item">高风险捕获率 <b>57.4%</b></span>
-          <span class="result-item">低风险漏诊率 <b>12.8%</b></span>
-          <span class="result-item">5 折交叉验证 AUC <b>0.886</b></span>
+          <span class="result-item">成交率 <b>85.99%</b></span>
+          <span class="result-item">总金额 <b>247.48 万</b></span>
+          <span class="result-item">峰值销量 <b>3332 万件</b></span>
+          <span class="result-item">RFM 客户 <b>1,083</b></span>
         </div>
       </article>
 
-      <!-- 项目二：电商 -->
+      <!-- 项目二：深圳通刷卡 -->
       <article class="project reveal">
         <div class="project-head">
-          <h3><span class="pidx">PROJECT 02</span>电商销售数据分析 —— 端到端经营诊断</h3>
-          <a class="repo-btn" href="https://github.com/78278287/ecommerce-sales-analysis" target="_blank" rel="noopener">
-            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
-            github.com/78278287/ecommerce-sales-analysis ↗
-          </a>
-        </div>
-        <p class="p-tagline">覆盖「<b>数据生成 → 数据清洗（EDA）→ 星型建模 → SQL 分析 → Python 分析 → Excel 报表 → Power BI</b>」完整链路，回答经营状况、品类渠道、客户价值三大业务问题。</p>
-        <div class="stack-row">
-          <span class="stack-chip">Python</span><span class="stack-chip">pandas</span>
-          <span class="stack-chip">MySQL</span><span class="stack-chip">SQL</span>
-          <span class="stack-chip">Excel</span><span class="stack-chip">Power BI</span><span class="stack-chip">DAX</span>
-        </div>
-        <ul class="work-list">
-          <li><b>数据清洗：</b>处理重复、缺失、异常值、口径不一致、孤儿记录等典型脏数据，整合为星型数据模型（<span class="m">2 事实表 + 3 维度表</span>）。</li>
-          <li><b>多维分析：</b><span class="m">10 组</span> SQL 分析查询 + Python 分析，覆盖销售趋势、品类结构、地域分布、渠道表现、复购、滞销与核心 KPI。</li>
-          <li><b>客户运营：</b>RFM 分层识别高价值客户，<span class="m">14%</span> 重要价值客户贡献核心利润，支撑精细化运营策略。</li>
-          <li><b>可视化交付：</b>Excel 报表（<span class="m">7 工作表 + 6 原生图表</span>）+ Power BI 看板（<span class="m">20+ DAX 度量</span>）。</li>
-        </ul>
-        <div class="result-row">
-          <span class="result-item">两年总 GMV <b>1357.7 万</b></span>
-          <span class="result-item">复购率 <b>38.22%</b></span>
-          <span class="result-item">2025 同比 <b>+16.2%</b></span>
-          <span class="result-item">客单价 <b>3536 元</b></span>
-        </div>
-        <p class="p-note">注：模拟数据（固定随机种子可复现），用于展示完整分析链路与工具运用。</p>
-      </article>
-
-      <!-- 项目三：深圳通刷卡 -->
-      <article class="project reveal">
-        <div class="project-head">
-          <h3><span class="pidx">PROJECT 03</span>深圳通刷卡数据分析 —— 交通出行大数据 EDA</h3>
+          <h3><span class="pidx">PROJECT 02</span>深圳通刷卡数据分析 —— 交通出行大数据 EDA</h3>
           <a class="repo-btn" href="https://github.com/78278287/shenzhen-metro-analysis" target="_blank" rel="noopener">
             <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
             github.com/78278287/shenzhen-metro-analysis ↗
           </a>
+        </div>
+        <div class="p-meta">
+          <span class="p-time">2026.03 — 至今</span>
+          <span class="p-role">个人项目 · <b>主要负责</b>：大样本抽样与清洗 · 乘客 / 地铁 / 巴士主题分析 · 线路运营指标统计 · 交互式可视化</span>
         </div>
         <p class="p-tagline">基于深圳市政府数据开放平台的深圳通刷卡流水，从「<b>乘客、地铁、巴士</b>」三个主题做探索性数据分析，挖掘出行规律与线路运营特征。</p>
         <div class="stack-row">
@@ -780,6 +763,40 @@
         </div>
       </article>
 
+      <!-- 项目三：电商 -->
+      <article class="project reveal">
+        <div class="project-head">
+          <h3><span class="pidx">PROJECT 03</span>电商销售数据分析 —— 端到端经营诊断</h3>
+          <a class="repo-btn" href="https://github.com/78278287/ecommerce-sales-analysis" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+            github.com/78278287/ecommerce-sales-analysis ↗
+          </a>
+        </div>
+        <div class="p-meta">
+          <span class="p-time">2026.01 — 至今</span>
+          <span class="p-role">个人项目 · <b>主要负责</b>：数据清洗与星型建模 · SQL / Python 多维分析 · RFM 客户分层 · Excel / Power BI 交付</span>
+        </div>
+        <p class="p-tagline">覆盖「<b>数据生成 → 数据清洗（EDA）→ 数据建模 → SQL 分析 → Python 分析 → Excel 报表 → Power BI</b>」完整链路，练习回答经营状况、品类渠道、客户价值三类业务问题。</p>
+        <div class="stack-row">
+          <span class="stack-chip">Python</span><span class="stack-chip">pandas</span>
+          <span class="stack-chip">MySQL</span><span class="stack-chip">SQL</span>
+          <span class="stack-chip">Excel</span><span class="stack-chip">Power BI</span><span class="stack-chip">DAX</span>
+        </div>
+        <ul class="work-list">
+          <li><b>数据清洗：</b>处理重复、缺失、异常值、口径不一致、孤儿记录等典型脏数据，整理为 <span class="m">2 张事实表 + 3 张维度表</span> 的数据结构。</li>
+          <li><b>多维分析：</b><span class="m">10 组</span> SQL 分析查询 + Python 分析，覆盖销售趋势、品类结构、地域分布、渠道表现、复购、滞销与核心 KPI。</li>
+          <li><b>客户运营：</b>用 RFM 划分客户价值层级，<span class="m">14%</span> 重要价值客户贡献核心利润，为运营策略提供参考。</li>
+          <li><b>可视化交付：</b>Excel 报表（<span class="m">7 工作表 + 6 原生图表</span>）+ Power BI 看板（<span class="m">多项 DAX 度量</span>）。</li>
+        </ul>
+        <div class="result-row">
+          <span class="result-item">两年总 GMV <b>1357.7 万</b></span>
+          <span class="result-item">复购率 <b>38.22%</b></span>
+          <span class="result-item">2025 同比 <b>+16.2%</b></span>
+          <span class="result-item">客单价 <b>3536 元</b></span>
+        </div>
+        <p class="p-note">注：模拟数据（固定随机种子可复现），用于展示完整分析链路与工具运用。</p>
+      </article>
+
       <!-- 项目四：新冠疫情 -->
       <article class="project reveal">
         <div class="project-head">
@@ -788,6 +805,10 @@
             <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
             github.com/78278287/covid19-analysis ↗
           </a>
+        </div>
+        <div class="p-meta">
+          <span class="p-time">2025.09 — 至今</span>
+          <span class="p-role">个人项目 · <b>主要负责</b>：数据清洗与口径统一 · 全球 / 中国疫情分析 · 分省排行与趋势 · Timeline 动态可视化</span>
         </div>
         <p class="p-tagline">基于 Johns Hopkins 大学全球新冠肺炎时间序列（确诊 / 死亡 / 治愈），对「<b>全球与中国</b>」两个维度做疫情探索与动态可视化。</p>
         <div class="stack-row">
@@ -810,33 +831,39 @@
         </div>
       </article>
 
-      <!-- 项目五：电商订单 -->
+      <!-- 项目五：糖康孪生 -->
       <article class="project reveal">
         <div class="project-head">
-          <h3><span class="pidx">PROJECT 05</span>电商订单数据分析 —— 多数据集 EDA 与 RFM 客户分层</h3>
-          <a class="repo-btn" href="https://github.com/78278287/tmall-sales-analysis" target="_blank" rel="noopener">
+          <h3><span class="pidx">PROJECT 05</span>糖康孪生 —— 糖尿病早期筛查数据分析平台</h3>
+          <a class="repo-btn" href="https://github.com/78278287/tangkang-twin" target="_blank" rel="noopener">
             <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
-            github.com/78278287/tmall-sales-analysis ↗
+            github.com/78278287/tangkang-twin ↗
           </a>
         </div>
-        <p class="p-tagline">基于和鲸社区 3 份互不相关的电商数据集，独立做「<b>整体指标、地区分布、时间趋势、店铺排行、客户价值</b>」探索性分析。</p>
+        <div class="p-meta">
+          <span class="p-time">2025.03 — 2026.07</span>
+          <span class="p-role">个人项目 · <b>主要负责</b>：数据治理 · 数据建模 · 特征工程 · 风险分级建模 · 可视化交付</span>
+        </div>
+        <p class="p-tagline">模拟医疗机构糖尿病早期筛查场景，练习「<b>数据治理 → 数据整理建模 → 特征工程 → 风险分级 → 可视化交付</b>」完整分析链路，加深对医疗数据分析流程的理解。</p>
         <div class="stack-row">
           <span class="stack-chip">Python</span><span class="stack-chip">pandas</span>
-          <span class="stack-chip">pyecharts</span><span class="stack-chip">RFM</span>
-          <span class="stack-chip">openpyxl</span>
+          <span class="stack-chip">scikit-learn</span><span class="stack-chip">XGBoost</span>
+          <span class="stack-chip">PyMySQL</span><span class="stack-chip">MySQL</span>
+          <span class="stack-chip">Power BI</span><span class="stack-chip">Excel</span>
         </div>
         <ul class="work-list">
-          <li><b>整体指标：</b>天猫订单 28,010 条，成交率 85.99%、退货率 23.44%；总金额 247.48 万、实际收入 190.25 万。</li>
-          <li><b>时间趋势：</b>每日订单走势 + 每小时走势（21–22 点峰值），下单到付款平均 7.7 分钟。</li>
-          <li><b>店铺分析：</b>双十一美妆店铺累计销量 TOP10、销量占比与平均价格；峰值单日销量 3,332 万件。</li>
-          <li><b>客户分层：</b>RFM 模型（R 20% + F 30% + M 50% 加权）对 <span class="m">1,083 位</span> 客户做价值分层，指导二次营销。</li>
-          <li><b>可视化交付：</b>3 部分共 12 张图（交互式 HTML + PNG）。</li>
+          <li><b>数据治理：</b>用 Python 清洗 3 份异构医疗数据（<span class="m">3520 条 → 2984 条</span>，留存率 84.8%），制定 8 类清洗规则，并对敏感字段做哈希脱敏。</li>
+          <li><b>数据建模：</b>按星型结构整理数据表（<span class="m">4 维表 + 2 事实表</span>），并完成数据一致性校验。</li>
+          <li><b>特征工程：</b>构建 35 项候选特征（含 15 项医学派生特征），经相关性 / 共线性筛选保留 18 项进入建模。</li>
+          <li><b>风险分级建模：</b>对比随机森林与 XGBoost 两种模型（含交叉验证调参），对筛查对象输出三级风险分层。</li>
+          <li><b>可视化交付：</b>8 份 Excel 专项报告 + HTML 综合分析报告 + Power BI 数据看板，结论可复现、可交付。</li>
         </ul>
         <div class="result-row">
-          <span class="result-item">成交率 <b>85.99%</b></span>
-          <span class="result-item">总金额 <b>247.48 万</b></span>
-          <span class="result-item">峰值销量 <b>3332 万件</b></span>
-          <span class="result-item">RFM 客户 <b>1,083</b></span>
+          <span class="result-item">测试集 AUC <b>0.928</b></span>
+          <span class="result-item">准确率 <b>84.4%</b></span>
+          <span class="result-item">高风险捕获率 <b>57.4%</b></span>
+          <span class="result-item">低风险漏诊率 <b>12.8%</b></span>
+          <span class="result-item">5 折交叉验证 AUC <b>0.886</b></span>
         </div>
       </article>
     </div>
@@ -878,7 +905,7 @@
             </li>
           </ul>
           <div class="p-tagline" style="margin-top:16px;">
-            <b style="color:var(--accent-dark);">竞赛侧写：</b>团队主力成员，多次以数据分析 / 大数据应用方向参赛并获奖，具备从业务问题到数据方案的完整落地能力。
+            <b style="color:var(--accent-dark);">竞赛侧写：</b>团队主力成员，多次以数据分析 / 大数据应用方向参赛并获奖，能围绕业务问题完成一套完整的数据分析方案。
           </div>
         </div>
       </div>
@@ -963,7 +990,7 @@
         </div>
         <div class="eval-card reveal d2">
           <h3><span class="n">03</span>实践能力</h3>
-          <p>具备数据分析全流程项目经验与多项竞赛成果，可快速将专业技能应用到实际工作中。</p>
+          <p>有数据分析全流程项目实践与多项竞赛成果，能快速将所学技能应用到实际工作中。</p>
         </div>
       </div>
     </div>
@@ -1000,7 +1027,7 @@
 <button class="back-top" id="backTop" type="button" aria-label="回到顶部">↑</button>
 
 <script src="./_shared/js/echarts.min.js"></script>
-<script src="assets/charts.js"></script>
-<script src="assets/main.js"></script>
+<script src="assets/charts.js?v=20260916b"></script>
+<script src="assets/main.js?v=20260916b"></script>
 </body>
 </html>
